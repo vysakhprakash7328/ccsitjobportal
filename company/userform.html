@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea ,[type=date] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+img {
+    width: 150px;
+    height: 150px;
+}
+</style>
+</head>
+<body>
+      <center><img src="images/cu.png" alt="calicut university"></center>
+<h3>Please fill the form carefully</h3>
+
+<div class="container">
+  <form action="usersubmit.php" method="POST">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+
+    <label for="Contact">Contact Number</label>
+    <input type="text" id="cno" name="cno" placeholder="Your Contact No..">
+
+  
+    <label for="address">Address</label>
+    <textarea id="address" name="address" placeholder="Yous address.." style="height:200px"></textarea>
+
+    <label for="date of birth">Date of Birth</label>
+    <input type="date" id="dob" name="dob">
+<br>
+
+    <label for="Gender">Gender</label>
+    <select id="gender" name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="marital status">marital status</label>
+    <select id="marital status" name="marital_status">
+      <option value="Married">Married</option>
+      <option value="single">single</option>
+      <option value="Divorced">Divorced</option>
+    </select>
+Education:
+<table>
+    <tr>
+        <th>SSLC:</th>
+        <td><input type="text" name="sslcyear" placeholder="Year of Passing"></td>
+        <td><input type="text" name="sslcmark" placeholder="Mark in percentage"></td>
+        <td><input type="text" name="sslcboard" placeholder="Board of examination"></td>
+        <td><input type="text" name="sslcregno" placeholder="Reg-No"></td>
+    
+    </tr>
+
+    <tr>
+        <th>PLUS TWO:</th>
+        <td><input type="text" name="plustwoyear" placeholder="Year of Passing"></td>
+        <td><input type="text" name="plustwomark" placeholder="Mark in percentage"></td>
+        <td><input type="text" name="plustwoboard" placeholder="Board of examination"></td>
+        <td><input type="text" name="plustworegno" placeholder="Reg-No"></td>
+    
+    </tr>
+
+  
+    <tr>
+        <th>DEGREE:</th>
+        <td><input type="text" name="degreeyear" placeholder="Year of Passing"></td>
+        <td><input type="text" name="degreemark" placeholder="Mark in percentage"></td>
+        <td><input type="text" name="degreeboard" placeholder="Board of examination"></td>
+        <td><input type="text" name="degreeregno" placeholder="Reg-No"></td>
+    
+    </tr>
+
+    <tr>
+        <th>PG:</th>
+        <td><input type="text" name="pgyear" placeholder="Year of Passing"></td>
+        <td><input type="text" name="pgmark" placeholder="Mark in percentage"></td>
+        <td><input type="text" name="pgboard" placeholder="Board of examination"></td>
+        <td><input type="text" name="pgregno" placeholder="Reg-No"></td>
+    
+    </tr>
+
+</table>
+<br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
